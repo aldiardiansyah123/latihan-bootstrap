@@ -1,7 +1,9 @@
 <?php
 session_start();
 if (isset($_SESSION['login'])) {
-    unset($_SESSION);
-    session_destroy();
-    header("location:lo.php");
-}
+        unset($_SESSION);
+        session_destroy();
+        
+        header("location:home.php");
+    }
+?>
